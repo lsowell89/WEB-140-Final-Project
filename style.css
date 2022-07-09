@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    }
 
 ul{ 
     list-style: none;
@@ -18,28 +19,49 @@ h1 { border: solid black 2px; }
 
 h2{ 
     background-color: #bed4e9;
-    border: solid 2px; }
+    border: solid 2px; 
+    text-align: center;
+}
 
+h3{ border: 2px solid black;}
 
+div.container{ position: relative; display: inline-block ;}
+
+div.active{ padding: 15px; background: #a9a9a9;}
+
+div.dropdown { position: absolute; width: 100%; 
+              border:  2px solid #a9a9a9; background: #bed4e9;
+               z-index: 1; display: none; }
+
+div.dropdown a:hover { background: white; color: red;}
+
+div.container:hover div.dropdown {display: block;}
 
 body{ background-color: #bed4e9;}
 
 main{
     background-color: white;
-    width: 50vw /*Alternatively 960px */;
-    min-height: 500px;
-    margin: 0 auto;
-    padding: 12px;}
+
+    }
 
 .container-md{ 
-        position: relative;
-        text-align: center;
-        color: Black; }
-
-.container{ 
     position: relative;
     text-align: center;
     color: Black; }
+
+.program_name{ 
+    position: relative;
+    text-align: center;
+    color: Black; 
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    
+
+    border: 2px solid red;
+    
+    
+}
 
 li{
     display: inline-block;
@@ -48,9 +70,40 @@ li{
     text-decoration: none;
     padding: 10px 20px; }
 
+header{
+    border: 2px black solid;
+    
+    
+}
+
+
+    
 
 footer{
+
     background-color:#bed4e9;
-    height: 300px;
-    text-align: center;
-    color: black;}
+    color: black;
+    border: 5px solid #a9a9a9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    min-height: 30px;
+    z-index:1000;
+    display: flex;
+    justify-content: space-evenly;
+    }
+  
+    #rightside{
+        border:2px green solid;
+        
+    }
+
+    #leftside{
+        border:2px purple solid;
+    }
+
+    
+
+
+
