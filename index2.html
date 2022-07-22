@@ -7,6 +7,8 @@
     <title>Final Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" /> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    
 </head>
 
 
@@ -15,23 +17,21 @@
 
   <header>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style =  " background-color: #bed4e9; font-size: x-large; border: 5px solid #5b5941 ">
+    <nav class=" py-0 navbar sticky-top  navbar-expand-sm navbar-light" style =  " background-color: #002366; font-size: x-large; border: 2px solid #5b5941;  ">
 
 
       
-      <div class="collapse navbar-collapse" style="background-color:#bed4e9 ;" id="navbarNav">
-        <ul class="navbar-nav" >
-          <li class="nav-item" >
-            <a class="nav-link" style="background-color:"; href="#"> Home</a>
+      <div id="navbarNav" class="collapse navbar-collapse" style=" background-color: #002366">
+        <ul  class="navbar-nav" >
+          <li id=tabs class="nav-item" >
+            <a id="tabs" class="nav-link" href="#"> Home</a>
           </li>
 
           <li class="nav-item" >
-            <a class="nav-link"  style= "background-color" href="#">Apply here</a>
+            <a  id="tabs" class="nav-link"  href="https://www.clevelandcc.edu/programs/how-to-apply/" target = "_blank">Apply here</a>
           </li>
 
-          <li class="nav-item" >
-            <a class="nav-link"  style="background-color"; href="#">Courses</a>
-          </li>
+          
         </ul>
       </div>
     </nav>
@@ -53,107 +53,191 @@
  <body>
 
 
-  <div class = "program_name">
+    <div class = "program_name">
     
-   <h1>Associate in Arts in Teacher Preparation Degree (AA) A1010T</h1>
-  </div>
+   
+    </div>
   
 
 
 
-    <main class = "container">
+    <main class = "container-fluid row">
 
-      <div class = "row">
       
-      <section class = "col" id = "leftside">
-       <h3>Course Requirements</h3>
-        <div class= "container">
-        <div class="active">I. General Education Core (45 SHC)</div>
-        <div class="dropdown"> 
-          <a href="#Eng1"> ENG 111- Writing and Inquiry</a><br>
-          <a href="#Eng2"> ENG 112- Writing/Research in the Disciplines</a><br>
-          <a href="#Com1"> COM-120 Intro Interpersonal Com</a><br>
-          <a href="#Com2"> COM-231 Public Speaking</a><br>
-          <a href="#Art1"> ART-111 Art Appreciation</a><br>
-          <a href="#Art2"> ART-114 Art History Survey I</a><br>
-          <a href="#Art2"> ART-115 Art History Survey II</a><br>
-          <a href="#MUS1"> MUS-110 Music Appreciation</a><br>
-          <a href="#MUS2"> MUS-112 Introduction to Jazz</a><br>
-          <a href="#phi1"> PHI- 215- Philosophical Issues</a><br>
-          <a href="#phi2"> PHI-240 Introduction to Ethics</a><br>
-          <a href="#Eco1"> ECO-251 Prin of Microeconomics</a><br>
-          <a href="#Eco2"> ECO-252 Prin of Macroeconomics/a><br>
-          <a href="#his1"> HIS-111 World Civilization I</a><br>
-          <a href="#his2"> HIS-131 American History I</a><br>
-          <a href="#his3"> HIS-132 American History II</a><br>
-          <a href="#pol1"> POL-120 American Government</a><br>
-          <a href="#mat1"> MAT-143 Quantitative Literacy</a><br>
-          <a href="#mat2"> MAT-152 Statisical Methods I</a><br>
-          <a href="#mat3"> MAT-171 Precalculus</a><br>
-          <a href="#bio1"> BIO-111 General Biology I</a><br>
-          <a href="#chm"> General Chemistry I</a><br>
-          <a href="#hum"> HUM-110 Technology and Society</a><br>
-          <a href="#psy1"> PSY-150 General Psychology</a><br>
-          <a href="#psy2"> PSY-241 Developmental Psych</a><br>
-          <a href="#psy3"> PSY-281 Abnormal Psychology </a><br>
-          <a href="#soc"> SOC-210 Introduction to Sociology</a><br>
-          <a href="#soc2"> SOC-213 Sociology of the Family</a><br>
-          <a href="#sco3"> SOC-225 Social Diversity</a><br>
+
+        <section class = "col " id = "rightside">
+          <h2>Required Courses</h2>
+        
+          
+
+
+
+
+          <div class= "container">
+            <p>I. General Education Core (45 SHC)</p>
+            <div> 
+              <ul class="courses">
+              <li> ENG 111- Writing and Inquiry</li>
+              <li> ENG 112- Writing/Research in the Disciplines</li>
+              <li> COM-120 Intro Interpersonal Com</li>
+              <li> COM-231 Public Speaking</li>
+              <li> ART-111 Art Appreciation</li>
+              <li> ART-114 Art History Survey I</li>
+              <li> ART-115 Art History Survey II</li>
+              <li> MUS-110 Music Appreciation</li>
+              <li> MUS-112 Introduction to Jazz</li>
+              <li>PHI- 215- Philosophical Issues</li>
+              <li> PHI-240 Introduction to Ethics</li>
+              <li>ECO-251 Prin of Microeconomics</li>
+              <li>ECO-252 Prin of Macroeconomics</li>
+              <li> HIS-111 World Civilization I</li>
+              <li> HIS-131 American History I</li>
+              <li> HIS-132 American History II</li>
+              <li> POL-120 American Government</li>
+              <li> MAT-143 Quantitative Literacy</li>
+              <li> MAT-152 Statisical Methods I</li>
+              <li> MAT-171 Precalculus</li>
+              <li> BIO-111 General Biology I</li>
+              <li> General Chemistry I</li>
+              <li> HUM-110 Technology and Society</li>
+              <li> PSY-150 General Psychology</li>
+              <li> PSY-241 Developmental Psych</li>
+              <li> PSY-281 Abnormal Psychology </li>
+              <li> SOC-210 Introduction to Sociology</li>
+              <li>SOC-213 Sociology of the Family</li>
+              <li> SOC-225 Social Diversity</li>
+              </ul>
+             </div>
+            </div>
+            <hr>
       
-         </div>
-        </div>
-        <hr>
-  
-      <section>
-        <div class="container">
-        <div class="active"> II. Additional Required Hours</div>
-        <div class="dropdown">
-          <a href="#aca"> ACA-122 College Transfer Success</a><br>
-          <a href="#edu1"> EDU-187 Teaching and Learning for All</a><br>
-          <a href="#edu2"> EDU-216 Foundations of Education</a><br>
-          <a href="#edu3"> Teacher Licensure Preparartion</a><br>
-          <a href="#edu4"> Literacy Develop and Instruct</a><br>
-        </div>
-       </div>
-      </section>
-      </section>
-
-        <div class = "col-6">
+          <section>
+            <div class="container">
+            <p> II. Additional Required Hours (15 SHC)</p>
+              <ul class="courses">
+              <li> ACA-122 College Transfer Success</li>
+              <li> EDU-187 Teaching and Learning for All</li>
+              <li> EDU-216 Foundations of Education</li>
+              <li> Teacher Licensure Preparartion</li>
+              <li>Literacy Develop and Instruct</li>
+              </ul>
+            </div>
+           </div>
+          </section>
 
 
-        <section id="jobs" class = "row">
-            <h2>Jobs and Careers Paths</h2>
-            <p> This program is designed to prepare graduates in a career of education.</p> 
-                <ul>
-                    <li class = "row">Teacher</li>
-                    <li class = "row"> Assistant Teacher</li>
-                    <li class = "row">Subitiute Teacher</li>
-                    <li class = "row">Academic Tutor</li> 
-                </ul> 
-            
+
+
+
+
+
+
+
+
         
         </section>
 
 
-        <section id="course" class="row">
+        <div class = "col-6">
+
+
+          
+
+
+          <section id="course" class="row">
             <h2>Course Description</h2>
-            <p>The Associates in Arts in Teacher Preparartion degrees allows North Carolina communitnity colleges to tranfer to a planned program of study with mininum of 60 semester credit hours. </p>
-            <p>The Associate in Arts Teacher Preparation degree is designed for students interested in the teaching field. The coursework provides an in-depth understanding of reading, writing, oral communication, fundamental mathematical skills, and foundational computer use. </p>
-        </section>
+            <p id="desc">The Associates in Arts in Teacher Preparartion degrees allows North Carolina communitnity colleges to tranfer to a planned program of study with mininum of 60 semester credit hours. </p>
+            <p id="desc">The Associate in Arts Teacher Preparation degree is designed for students interested in the teaching field. The coursework provides an in-depth understanding of reading, writing, oral communication, fundamental mathematical skills, and foundational computer use. </p>
+               <p id="desc">North Carolina Community College graduates of two-year associate in science programs are enabled to be admitted to Signatory Institutions of North Carolina Independent Colleges and Universities and constituent institutions of The University of North Carolina with a junior status.
+               As a part if The Comprehensive Articulation Agreement (CAA) and the Independent Comprehensive Articulation Agreement (ICAA).
+               In order to transfer with a junior status graduates of community status must maintain an overall GPA of at least 2.7 on a 4.0 scale also a grade of “C” or better in each course.</p>
+
+
+            <section class = "container">
+              <h2>Cleveland Community College Campus</h2>
+              
+              <div class = "contain">
+              
+                <div  class ="slider-outer">
+                  <img class = "arrows" id = "prev" src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1655821745/free_arrow_kaiwrc.jpg" alt ="arrow-left">
+            
+            
+                <div  class ="slider-inner">
+            
+            
+                  <img src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1657827211/cleveland3_rm3omd.jpg" class = "active">
+                  <img src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1657827226/cleveland4_iu1g47.jpg">
+                  <img src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1657827237/cleveland5_bkcxxw.jpg">
+                  <img src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1657827249/collegepic1_wmiriy.jpg">
+                  <img src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1657827261/collegepic2_chwwgv.jpg">
+            
+            
+                </div>
+                  
+                
+                <img class = "arrows" id = "next" src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1655821745/free_arrow_kaiwrc.jpg" alt ="arrow-right">
+            
+            
+                
+                
+                </div>
+                </div>
+            </section>
+            
+
+
+          </section>
+
+
+
+
+    
 
         </div>
 
 
-        <section class = "col" id = "rightside">
-          rightside
+        <section class = "col" id = "leftside">
+
+
+          <section id="jobs" class = "row">
+            <h2>Jobs and Careers Paths</h2>
+              <p id="desc"> This program is designed to prepare graduates in a career of education.</p> 
+
+              <video width="320" height="240" autoplay>
+                <source src="https://res.cloudinary.com/derrickstahlman/video/upload/v1657732113/Signup_ljlenw.mp4" type="video/mp4">
+                
+              Your browser does not support the video tag.
+              </video>
+
+                <ul id="job-list">
+                    <li id="list" class = "">Teacher</li>
+                    <li id="list" class = ""> Assistant Teacher</li>
+                    <li id="list" class = "">Substitute Teacher</li>
+                    <li id="list" class = "">Academic Tutor</li> 
+                </ul> 
+            
+        
+          </section>
+
+
+          
         </section>
 
-      </div>
+      
   </main>
   <footer>
-    &copy; Group B 
+    <a class = "foot" href="#home">ⓒ Group B</a>
+
   </footer> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
   <script src="script.js"></script>
  </body>
 </html>
+
+<!-- 1.I'm having trouble separating the list so the ones in the navagation bar are not the same as the ones in the career list
+     2. I'm having trouble getting the columns to align using bootstrap. I can do without but I know the assignment is required to use bootstrapbmnnnnnnnnnnnv  --> 

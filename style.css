@@ -2,42 +2,64 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family:Arial, Helvetica, sans-serif;
+    color: white
+}
+
+    
+ #navbarNav{
+    color: white;
+ }
+    .navbar-nav{ 
+        list-style: none;
+        font-size: 1em;
+        text-align: center;
+        margin:auto;
+        padding: 0;
+        background-color: #002366;
+        overflow: hidden;
+        justify-content: space-between;
+        color: white;
     }
 
-ul{ 
-    list-style: none;
-    font-size: 1em;
+
+#tabs{
+      color: white;
+}
+
+
+.nav-item{
+    display: inline-block;
+    border: solid;
     text-align: center;
-    margin:auto;
-    padding: 0;
-    background-color: #a9a9a9;
-    overflow: hidden;
-    justify-content: space-between;}
+    text-decoration: none;
+    padding: 10px 20px; 
+    margin:40px;
+    background-color:#002366;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+
+
 
 h1 { border: solid black 2px; }
 
 h2{ 
-    background-color: #bed4e9;
+    background-color: #002366;
     border: solid 2px; 
     text-align: center;
 }
+    
 
-h3{ border: 2px solid black;}
 
-div.container{ position: relative; display: inline-block ;}
 
-div.active{ padding: 15px; background: #a9a9a9;}
+body{ background-color: #002366;
 
-div.dropdown { position: absolute; width: 100%; 
-              border:  2px solid #a9a9a9; background: #bed4e9;
-               z-index: 1; display: none; }
-
-div.dropdown a:hover { background: white; color: red;}
-
-div.container:hover div.dropdown {display: block;}
-
-body{ background-color: #bed4e9;}
+    
+}
 
 main{
     background-color: white;
@@ -47,43 +69,38 @@ main{
 .container-md{ 
     position: relative;
     text-align: center;
-    color: Black; }
+    color: white; }
+
+
 
 .program_name{ 
-    position: relative;
-    text-align: center;
-    color: Black; 
     width: 100%;
-    height: 200px;
+    height: 40vh;
     margin-bottom: 15px;
-    
-
-    border: 2px solid red;
-    
-    
+    margin-top: 1px;
+    background-position: center;
+    background-image: url("https://res.cloudinary.com/derrickstahlman/image/upload/v1657735763/banner2_xuwikg.png");
+    background-size:cover;
+    border: 2px solid black;
 }
 
-li{
-    display: inline-block;
-    border: solid;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px; }
+
 
 header{
     border: 2px black solid;
+    background-color: #002366;
+    color: white;
     
-    
+    }
+
+.job-list{
+    color: black;
 }
-
-
-    
-
 footer{
 
-    background-color:#bed4e9;
-    color: black;
-    border: 5px solid #a9a9a9;
+    background-color:#002366;
+    color: white;
+    border: 5px solid #32CD32;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -95,15 +112,119 @@ footer{
     }
   
     #rightside{
-        border:2px green solid;
+        padding-bottom: 3%;
+        margin-right: 1%;
         
     }
 
     #leftside{
-        border:2px purple solid;
+       text-align: center;
+       margin-left: 1%;
+
+        
+    }
+
+    #job-list{
+        list-style:none;
+        color: black;
     }
 
     
+    
+    
+    .foot{
+        color: white;
+        text-decoration: none;
+    
+    }
+    .foot:visited{
+        color:#32CD32;
+    }
 
 
 
+ #desc{
+     color: black;
+ }
+
+
+
+    .container{
+        width:35%;
+        margin: 40px auto;
+        overflow: auto;
+        background-color: #002366;
+        border: 6px dotted #32CD32;
+        padding: 15px;
+        display: inline-block;
+    }
+
+
+    .slider-inner{
+    
+
+        position: relative;
+        overflow: hidden;
+        float: left;
+        padding:3px;
+        
+    }
+    .slider-inner img {
+        display:none;
+        width:100%;
+        
+
+
+    }
+
+    .slider-inner img.active{
+        display:inline-block;
+        
+        
+        
+
+    }
+
+    #prev, #next{
+        float:left;
+        margin-top:130px;
+        cursor:pointer;
+    }
+
+
+    #prev{
+        position: relative;
+        margin-top:125%;
+        margin-left: 60%;
+        z-index: 100;
+        transform: scaleX(-1);
+        width:50%;
+
+    }
+
+    #next{
+
+        position: relative;
+        margin-top: 125%;
+        margin-left: -10%;
+        z-index: 100;
+        width: 50%;
+    }
+ 
+    .contain{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+    }
+ #list{
+    color: black;
+ }
+
+    .slider-outer{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    padding: 3px;
+    grid-template-columns: 1fr 3fr 1fr;
+    }
